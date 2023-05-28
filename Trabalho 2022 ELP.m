@@ -18,6 +18,7 @@ s = (0.001:0.001:1) ; // Escorregamento
 nm = (1 - s) * nsinc;
 conjv = zeros(length(s),1);
 conjva = zeros(length(s),1);
+
 //2
 figure()
 for a = 1:length(r2v)
@@ -70,7 +71,7 @@ figure()
 plot(s,abs(im),'LineWidth',2.0);
 xlabel('Escorregamento');
 ylabel('corrente de fase');
-title('\bfescorregamento X Corrente de magnetização','LineWidth',3.0);
+title('\bfescorregamento X Corrente de magnetizaÃ§Ã£o','LineWidth',3.0);
 grid on;
 perdasjoule = zeros(length(s),1);
 i2 = zeros(length(s),1);
@@ -91,8 +92,8 @@ end
 figure()
 plot(s,fp,'LineWidth',2.0);
 xlabel('Escorregamento');
-ylabel('Fator de Potência');
-title('\bfescorregamento X Fator de Potência','LineWidth',3.0);
+ylabel('Fator de PotÃªncia');
+title('\bfescorregamento X Fator de PotÃªncia','LineWidth',3.0);
 grid on;
 pent = zeros(length(s),1);
 psaida = zeros(length(s),1);
@@ -107,4 +108,5 @@ plot(s,rend,'LineWidth',2.0);
 xlabel('Escorregamento');
 ylabel('Rendimento');
 title('\bfescorregamento X Rendimento','LineWidth',3.0);
-grid on;
+
+gridÂ on;
